@@ -1,9 +1,15 @@
+const secondModule = require("./async.js");
+
+secondModule.hello();
+
 let letName;
 console.log('letName: ' + letName);
 
 letName = 'mohamed';
 console.log("letName: " + letName);
 
+letName = 10;
+console.log("letname: " + 10 / 0);
 
 var varName;
 console.log("varName: " + varName);
@@ -14,7 +20,7 @@ const constName = 'mohamed';
 console.log("constName: " + constName);
 
 var count;
-var sum = count + 10;
+var sum = 0 / 0;
 console.log(sum);
 
 // NaN: Not a number: As the name implies, it is used to denote that the value of an object is not a number. There are many ways that you can generate this error, one being invalid math opertaions such as 0/0 or sqrt(-1)
@@ -33,5 +39,8 @@ cars[0] = "Toyota";
 // You can add an element:
 cars.push("Audi");
 
+// cars = [];
+
+console.log(cars);
 
 

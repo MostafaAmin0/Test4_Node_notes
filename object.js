@@ -2,8 +2,8 @@ const person = {
     firstName: "John",
     lastName: "Doe",
     language: "EN",
-    fullName: function () {
-        return this.firstName + " " + this.lastName;
+    fullName: function (value) {
+        return this.firstName + " " + this.lastName + " " + value;
     },
     get fullNameGetter() {
         return this.firstName + " " + this.lastName;
@@ -19,7 +19,7 @@ console.log(person.firstName);
 console.log(person['firstName']);
 
 console.log(person.fullNameGetter);
-console.log(person.fullName());
+console.log(person.fullName("alo"));
 
 person.lang = 'ar';
 console.log(person.language);
