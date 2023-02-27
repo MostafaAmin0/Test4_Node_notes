@@ -14,7 +14,7 @@ npm i package --save-dev
 
 //load module and use function
 //module should be constant
-const secondModule = require('./second');
+const secondModule = require('./second_module');
 
 // console.log(secondModule);
 // secondModule.sayHello(' and this from first');
